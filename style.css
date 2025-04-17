@@ -25,6 +25,7 @@ button {
 .window .window-body {
     height: 90%;
     padding: 20px;
+    user-select: text;
     background-color: whitesmoke;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
