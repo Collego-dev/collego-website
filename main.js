@@ -33,8 +33,10 @@ for (let windowHeader of windowHeaders) {
         });
 
         function moveHandler(event) {
-            window.style.left = event.clientX - startX + "px";
-            window.style.top = event.clientY - startY + "px";
+            if (!window.classList.contains("maximized")) {
+                window.style.left = event.clientX - startX + "px";
+                window.style.top = event.clientY - startY + "px";
+            }
         }
     });
 }
