@@ -18,6 +18,7 @@ button {
 
 .window {
     position: absolute;
+    height: max-content;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -55,6 +56,8 @@ button {
 }
 
 .maximized {
+    left: 1vh !important;
+    top: 0.5vh !important;
     height: 90vh !important;
     width: 99vw !important;
 }

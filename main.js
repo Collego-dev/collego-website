@@ -1,3 +1,5 @@
+let zIndex = 1;
+
 let exitBtns = document.querySelectorAll(".fa-times");
 for (let exitBtn of exitBtns) {
     exitBtn.addEventListener("click", () => {
@@ -10,8 +12,6 @@ for (let maximizeBtn of maximizeBtns) {
     maximizeBtn.addEventListener("click", () => {
         let window = maximizeBtn.parentElement.parentElement.parentElement;
         window.classList.toggle("maximized");
-        window.style.left = "0.5vw";
-        window.style.top = "1vh";
     });
 }
 
@@ -19,6 +19,8 @@ let windowHeaders = document.querySelectorAll(".window-header");
 for (let windowHeader of windowHeaders) {
     windowHeader.addEventListener("mousedown", function (event) {
         let window = windowHeader.parentElement;
+        window.style.zIndex = zIndex++;
+
         const startX = event.clientX - window.offsetLeft;
         const startY = event.clientY - window.offsetTop;
 
