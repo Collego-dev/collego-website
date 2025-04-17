@@ -12,6 +12,8 @@ for (let maximizeBtn of maximizeBtns) {
     maximizeBtn.addEventListener("click", () => {
         let window = maximizeBtn.parentElement.parentElement.parentElement;
         window.classList.toggle("maximized");
+        maximizeBtn.classList.toggle("fa-square");
+        maximizeBtn.classList.toggle("fa-minus-square");
     });
 }
 
