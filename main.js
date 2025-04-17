@@ -3,7 +3,8 @@ let zIndex = 1;
 let exitBtns = document.querySelectorAll(".fa-times");
 for (let exitBtn of exitBtns) {
     exitBtn.addEventListener("click", () => {
-        exitBtn.parentElement.parentElement.parentElement.remove();
+        exitBtn.parentElement.parentElement.parentElement.style.display =
+            "none";
     });
 }
 
