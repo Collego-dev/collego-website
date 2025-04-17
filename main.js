@@ -38,3 +38,9 @@ for (let windowHeader of windowHeaders) {
         }
     });
 }
+
+function openWindow(id) {
+    let window = document.getElementById(id);
+    window.style.display = "";
+    window.style.zIndex = zIndex++;
+}
