@@ -1,0 +1,56 @@
+  body {
+    background-color: #0a0a0a;
+    color: #e0e0ff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    background: radial-gradient(circle at top left, #1a1a40, #0d1b2a, #000814, #14011b, #19091e);
+    color: #e8e8ff;
+    box-shadow: 0 0 30px rgba(0, 100, 255, 0.1) inset;
+    text-align: center;
+  }
+  
+  
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  .btn-discord {
+    background: linear-gradient(135deg, #6a80ff, #5865F2);
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(88, 101, 242, 0.5);
+  }
+  
+  .btn-discord:hover {
+    background: linear-gradient(135deg, #788fff, #4752c4);
+    box-shadow: 0 0 20px rgba(88, 101, 242, 0.8);
+  }
+  
+  h1, h2, h3 {
+    color: #d8d8ff;
+    text-shadow: 0 0 5px rgba(150, 150, 255, 0.3);
+  }
+  
+  p {
+    color: #777777;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #9999cc;
+    background-color: #0a0a1f;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Collego | 学生プログラマーの集会場</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="static/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+
+    <body>
+        <div id="menubar">
+            <button onclick="openWindow('about')">About</button>
+            <button onclick="openWindow('purpose')">Collegoの目的</button>
+            <button onclick="openWindow('icon')">Icon</button>
+            <button onclick="openWindow('ideal')">大切な考え</button>
+        </div>
+        <div id="desktop">
+            <div id="about" class="window">
+                <div class="window-header">
+                    <p>About</p>
+                    <div class="window-right-menu">
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <h2>Collego</h2>
+                    <p>技術が好きでたまらない人に贈る、ディスコードサーバー</p>
+                    <a href="https://discord.com/invite/WpbFkv3uH6">
+                        <button>Discordサーバーに入る</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="purpose" class="window">
+                <div class="window-header">
+                    <p>Collegoの目的</p>
+                    <div class="window-right-menu">
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <h2>Collegoの目的</h2>
+                    <p>Collegoは、技術が好きな人が集まる場所です。</p>
+                    <p>
+                        技術を学ぶこと、教えること、遊ぶこと、全てを楽しむことができます。
+                    </p>
+                </div>
+            </div>
+
+            <div id="icon" class="window">
+                <div class="window-header">
+                    <p>Icon</p>
+                    <div class="window-right-menu">
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <span ondblclick="location.href='./secret/index.html'">
+                        <img
+                            src="./static/collego-icon.png"
+                            alt="Collegoのアイコン"
+                            width="200px"
+                            height="200px"
+                        />
+                    </span>
+                </div>
+            </div>
+
+            <div id="ideal" class="window">
+                <div class="window-header">
+                    <p>大切な考え</p>
+                    <div class="window-right-menu">
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <h2>Collegoの大切な考え</h2>
+                    <ol>
+                        <li>
+                            <strong>技術で人を傷つけてはならない</strong>
+                            技術は人を助けるものであり、害するものではありません。
+                        </li>
+                        <li>
+                            <strong
+                                >自分が楽しいと思ったものに全力になれ</strong
+                            >
+                            楽しさは最高のモチベーションです。
+                        </li>
+                        <li>
+                            <strong>技術に年齢は関係ない</strong>
+                            年齢に関係なく、好きという気持ちがあればそれでOK！
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
