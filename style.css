@@ -59,7 +59,7 @@ button {
 
 .maximized {
     left: 1vh !important;
-    top: 0.5vh !important;
+    top: 1vh !important;
     height: 90vh !important;
     width: 99vw !important;
 }
