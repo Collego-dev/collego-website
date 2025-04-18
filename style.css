@@ -75,6 +75,11 @@ button {
     right: 65vh;
 }
 
+#calculator {
+    top: 50vh;
+    left: 65vh;
+}
+
 .window {
     position: absolute;
     height: max-content;
