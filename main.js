@@ -1,27 +1,27 @@
 let zIndex = 1;
 
-let exitBtns = document.querySelectorAll(".fa-times");
-for (let exitBtn of exitBtns) {
+const exitBtns = document.querySelectorAll(".fa-times");
+for (const exitBtn of exitBtns) {
     exitBtn.addEventListener("click", () => {
         exitBtn.parentElement.parentElement.parentElement.style.display =
             "none";
     });
 }
 
-let maximizeBtns = document.querySelectorAll(".fa-square");
-for (let maximizeBtn of maximizeBtns) {
+const maximizeBtns = document.querySelectorAll(".fa-square");
+for (const maximizeBtn of maximizeBtns) {
     maximizeBtn.addEventListener("click", () => {
-        let window = maximizeBtn.parentElement.parentElement.parentElement;
+        const window = maximizeBtn.parentElement.parentElement.parentElement;
         window.classList.toggle("maximized");
         maximizeBtn.classList.toggle("fa-square");
         maximizeBtn.classList.toggle("fa-minus-square");
     });
 }
 
-let windowHeaders = document.querySelectorAll(".window-header");
-for (let windowHeader of windowHeaders) {
+const windowHeaders = document.querySelectorAll(".window-header");
+for (const windowHeader of windowHeaders) {
     windowHeader.addEventListener("mousedown", function (event) {
-        let window = windowHeader.parentElement;
+        const window = windowHeader.parentElement;
         window.style.zIndex = zIndex++;
 
         const startX = event.clientX - window.offsetLeft;
@@ -39,10 +39,4 @@ for (let windowHeader of windowHeaders) {
             }
         }
     });
-}
-
-function openWindow(id) {
-    let window = document.getElementById(id);
-    window.style.display = "";
-    window.style.zIndex = zIndex++;
 }
